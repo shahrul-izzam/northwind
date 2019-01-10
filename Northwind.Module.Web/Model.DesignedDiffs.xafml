@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Edit">
+        <ActionLink ActionId="Cancel" IsNewNode="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
+  </ActionDesign>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <ListView Id="Customers_OrdersCollection_ListView" EditorTypeName="Northwind.Module.Web.Editors.CustomComplexListEditor" AllowEdit="True" />
+    <DetailView Id="Employees_DetailView" CollectionsEditMode="Edit">
+      <Items>
+        <PropertyEditor Id="EmployeesCollection" PropertyEditorType="DevExpress.ExpressApp.Editors.ListPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="Employees_EmployeesCollection_ListView" MasterDetailMode="ListViewOnly" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" AllowEdit="True" />
+    <DetailView Id="Products_DetailView">
+      <Items>
+        <PropertyEditor Id="CategoryID" PropertyEditorType="Northwind.Module.Web.Editors.CustomDropDownTreelistEditor" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

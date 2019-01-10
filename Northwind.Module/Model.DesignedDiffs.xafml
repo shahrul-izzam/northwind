@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Northwind">
+  <NavigationItems>
+    <Items>
+      <Item Id="@0d9ccbea-fcf0-455f-b93b-9e36aed49970" Caption="Employee" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@dc958c21-d16d-4771-a243-fea13ede857a" Caption="Employee List" ViewId="Employees_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@14da5490-6fd7-41d5-8222-85f8016c4aaf" Caption="Customer" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@ea65fa0d-193d-4bb1-9665-05b5a1b43457" Caption="Customer List" ViewId="Customers_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Products_DetailView">
+      <Items>
+        <PropertyEditor Id="SupplierID" LookupEditorMode="AllItems" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="@1c502fdc-5a46-4311-b61d-9cfcb79eb9a5" Caption="Suppliers" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@8100e84b-756d-4653-8ebd-2243682b1565" Caption="Supplier List" ViewId="Suppliers_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@2adf5731-2314-4e1c-9b20-959aafe8bd87" Caption="Products" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@77decfb9-6065-4b39-92c6-a5752c963d62" Caption="Product List" ViewId="Products_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

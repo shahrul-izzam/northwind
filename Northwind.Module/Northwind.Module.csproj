@@ -1,0 +1,298 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Module</RootNamespace>
+    <AssemblyName>Northwind.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.Designer.cs">
+      <DependentUpon>Alphabeticallistofproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Categories.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CategorySalesfor1997.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CategorySalesfor1997.Designer.cs">
+      <DependentUpon>CategorySalesfor1997.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CurrentProductList.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CurrentProductList.Designer.cs">
+      <DependentUpon>CurrentProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerandSuppliersbyCity.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerandSuppliersbyCity.Designer.cs">
+      <DependentUpon>CustomerandSuppliersbyCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerCustomerDemo.Designer.cs">
+      <DependentUpon>CustomerCustomerDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustomerDemographics.Designer.cs">
+      <DependentUpon>CustomerDemographics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Customers.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustOrderHistResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustOrdersDetailResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\CustOrdersOrdersResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Employees.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\EmployeeSalesbyCountryResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\EmployeeTerritories.Designer.cs">
+      <DependentUpon>EmployeeTerritories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Invoices.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\LogEntries.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\LogEntries.Designer.cs">
+      <DependentUpon>LogEntries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderDetails.Designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderDetailsExtended.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderDetailsExtended.Designer.cs">
+      <DependentUpon>OrderDetailsExtended.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Orders.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrdersQry.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrdersQry.Designer.cs">
+      <DependentUpon>OrdersQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderSubtotals.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\OrderSubtotals.Designer.cs">
+      <DependentUpon>OrderSubtotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Products.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductsAboveAveragePrice.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductsAboveAveragePrice.Designer.cs">
+      <DependentUpon>ProductsAboveAveragePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductSalesfor1997.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductSalesfor1997.Designer.cs">
+      <DependentUpon>ProductSalesfor1997.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductsbyCategory.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\ProductsbyCategory.Designer.cs">
+      <DependentUpon>ProductsbyCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\QuarterlyOrders.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\QuarterlyOrders.Designer.cs">
+      <DependentUpon>QuarterlyOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Region.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Region.Designer.cs">
+      <DependentUpon>Region.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesbyCategory.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesbyCategory.Designer.cs">
+      <DependentUpon>SalesbyCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesByCategoryResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesbyYearResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesTotalsbyAmount.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SalesTotalsbyAmount.Designer.cs">
+      <DependentUpon>SalesTotalsbyAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Shippers.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Shippers.Designer.cs">
+      <DependentUpon>Shippers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\sp_helpdiagramdefinitionResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\sp_helpdiagramsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\StoredProcHelper.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SummaryofSalesbyQuarter.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SummaryofSalesbyQuarter.Designer.cs">
+      <DependentUpon>SummaryofSalesbyQuarter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SummaryofSalesbyYear.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\SummaryofSalesbyYear.Designer.cs">
+      <DependentUpon>SummaryofSalesbyYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Suppliers.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\sysdiagrams.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\sysdiagrams.Designer.cs">
+      <DependentUpon>sysdiagrams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\TenMostExpensiveProductsResult.cs">
+      <DependentUpon>StoredProcHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Territories.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Territories.Designer.cs">
+      <DependentUpon>Territories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\OverrideAuditDataItems.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\NorthwindDataModel.xpo" />
+    <None Include="BusinessObjects\NorthwindDataModel.xpo.diagram">
+      <DependentUpon>NorthwindDataModel.xpo</DependentUpon>
+    </None>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\sample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Welcome.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
