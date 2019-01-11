@@ -18,7 +18,6 @@
     </PropertyEditor>
   </ViewItems>
   <Views>
-    <ListView Id="Customers_OrdersCollection_ListView" EditorTypeName="Northwind.Module.Web.Editors.CustomComplexListEditor" AllowEdit="True" />
     <DetailView Id="Employees_DetailView" CollectionsEditMode="Edit">
       <Items>
         <PropertyEditor Id="EmployeesCollection" PropertyEditorType="DevExpress.ExpressApp.Editors.ListPropertyEditor" />
