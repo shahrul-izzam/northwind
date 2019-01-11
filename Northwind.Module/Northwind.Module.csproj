@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\ICustomerView.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.Designer.cs">
       <DependentUpon>Alphabeticallistofproducts.cs</DependentUpon>

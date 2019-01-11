@@ -104,9 +104,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\EnableEditInNestedFrame.cs" />
+    <Compile Include="Controllers\ApplyCustomHeaderContent.cs" />
+    <Compile Include="Controllers\CustomCustomerDetailView.cs" />
+    <Compile Include="Controllers\SomeViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SomeViewController.Designer.cs">
+      <DependentUpon>SomeViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Editors\CustomComplexListEditor.cs" />
     <Compile Include="Editors\CustomDropDownTreelistEditor.cs" />
+    <Compile Include="Layout\CustomLayoutGroupTemplate.cs" />
     <Compile Include="WebModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -116,6 +124,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controllers\SomeViewController.resx">
+      <DependentUpon>SomeViewController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="WebModule.resx">

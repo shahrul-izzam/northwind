@@ -18,12 +18,28 @@
     </PropertyEditor>
   </ViewItems>
   <Views>
+    <DetailView Id="Customers_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Customers" IsCollapsibleCardGroup="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="OrdersCollection_Group" ImageName="" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="Employees_DetailView" CollectionsEditMode="Edit">
       <Items>
         <PropertyEditor Id="EmployeesCollection" PropertyEditorType="DevExpress.ExpressApp.Editors.ListPropertyEditor" />
       </Items>
     </DetailView>
     <ListView Id="Employees_EmployeesCollection_ListView" MasterDetailMode="ListViewOnly" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" AllowEdit="True" />
+    <ListView Id="Order_Custom_ListView" ClassName="Northwind.Module.BusinessObjects.Northwind.Orders" IsNewNode="True" />
+    <DetailView Id="Orders_Custom_DetailView" ClassName="Northwind.Module.BusinessObjects.Northwind.Orders" IsNewNode="True">
+      <Items IsNewNode="True">
+        <CustomUserControlViewItemWeb Id="CustomerViewItem" CustomControlPath="CustomerViewControl.ascx" IsNewNode="True" />
+      </Items>
+    </DetailView>
     <DetailView Id="Products_DetailView">
       <Items>
         <PropertyEditor Id="CategoryID" PropertyEditorType="Northwind.Module.Web.Editors.CustomDropDownTreelistEditor" />
