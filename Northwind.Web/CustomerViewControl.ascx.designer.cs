@@ -13,48 +13,12 @@ namespace Northwind.Web {
     public partial class CustomerViewControl {
         
         /// <summary>
-        /// CompanyName_Label control.
+        /// StageCardView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel CompanyName_Label;
-        
-        /// <summary>
-        /// City_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel City_Label;
-        
-        /// <summary>
-        /// CompanyName_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox CompanyName_TextBox;
-        
-        /// <summary>
-        /// City_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox City_TextBox;
-        
-        /// <summary>
-        /// OrdersCollection_GridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView OrdersCollection_GridView;
+        protected global::DevExpress.Web.ASPxCardView StageCardView;
     }
 }

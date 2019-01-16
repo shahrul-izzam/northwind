@@ -1,6 +1,7 @@
 ﻿using System;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Web.Editors;
+using DevExpress.Xpo;
 using Northwind.Module.BusinessObjects;
 using Northwind.Module.BusinessObjects.Northwind;
 
@@ -65,11 +66,13 @@ namespace Northwind.Module.Web.Controllers
             {
                 customer.ShipName = ViewCurrentObject.ShipName;
                 customer.ShipAddress = ViewCurrentObject.ShipAddress;
+                customer.OrdersCollection = ViewCurrentObject.OrdersCollection;
             }
             else
             {
                 customer.ShipName = null;
                 customer.ShipAddress = null;
+                customer.OrdersCollection = new XPCollection<Orders>();
             }
         }
     }

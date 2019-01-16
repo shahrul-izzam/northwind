@@ -159,6 +159,7 @@
   <ItemGroup>
     <Content Include="CustomerViewControl.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="DefaultVerticalTemplateContent.ascx" />
     <Content Include="Error.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\Logo.png" />
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultVerticalTemplateContent.ascx.cs">
+      <DependentUpon>DefaultVerticalTemplateContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultVerticalTemplateContent.ascx.designer.cs">
+      <DependentUpon>DefaultVerticalTemplateContent.ascx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>

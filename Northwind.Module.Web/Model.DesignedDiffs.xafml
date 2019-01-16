@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
   <ActionDesign>
+    <Actions>
+      <Action Id="singleChoiceAction1" ImageName="Action_ChooseSkin" PaintStyle="Image" />
+    </Actions>
     <ActionToContainerMapping>
       <ActionContainer Id="Edit">
         <ActionLink ActionId="Cancel" IsNewNode="True" />
@@ -18,27 +21,16 @@
     </PropertyEditor>
   </ViewItems>
   <Views>
-    <DetailView Id="Customers_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Customers" IsCollapsibleCardGroup="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="OrdersCollection_Group" ImageName="" />
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="Employees_DetailView" CollectionsEditMode="Edit">
-      <Items>
-        <PropertyEditor Id="EmployeesCollection" PropertyEditorType="DevExpress.ExpressApp.Editors.ListPropertyEditor" />
-      </Items>
-    </DetailView>
     <ListView Id="Employees_EmployeesCollection_ListView" MasterDetailMode="ListViewOnly" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" AllowEdit="True" />
-    <ListView Id="Order_Custom_ListView" ClassName="Northwind.Module.BusinessObjects.Northwind.Orders" IsNewNode="True" />
-    <DetailView Id="Orders_Custom_DetailView" ClassName="Northwind.Module.BusinessObjects.Northwind.Orders" IsNewNode="True">
+    <DetailView Id="Orders_Custom_DetailView" ClassName="Northwind.Module.BusinessObjects.Northwind.Customers" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="CustomerViewItem" CustomControlPath="CustomerViewControl.ascx" IsNewNode="True" />
       </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True">
+          <LayoutItem Id="CustomerViewItem" ViewItem="CustomerViewItem" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <DetailView Id="Products_DetailView">
       <Items>

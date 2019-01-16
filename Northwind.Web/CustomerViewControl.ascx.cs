@@ -60,14 +60,14 @@ namespace Northwind.Web
         private void UpdateCustomer()
         {
             if(!isInitialized) return;
-            CompanyName_TextBox.Text = ShipName;
-            City_TextBox.Text = ShipAddress;
+            //CompanyName_TextBox.Text = ShipName;
+            //Shi.Text = ShipAddress;
         }
         
         private void UpdateOrdersControl() {
             if(!isInitialized) return;
-            OrdersCollection_GridView.DataSource = OrdersCollection;
-            OrdersCollection_GridView.DataBind();
+            StageCardView.DataSource = OrdersCollection;
+            StageCardView.DataBind();
         }
     }
 }

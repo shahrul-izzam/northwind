@@ -8,6 +8,7 @@ namespace Northwind.Module.BusinessObjects
     {
         string ShipName { get; set; }
         string ShipAddress { get; set; }
+        XPCollection<Orders> OrdersCollection { get; set; }
         event EventHandler Changed;
     }
 }

@@ -227,6 +227,7 @@ namespace Northwind.Module.Web.Layout
 
             ASPxImage collapsible = new ASPxImage();
             collapsible.CssClass = "dxWeb_rpCollapseButton_XafTheme";
+            collapsible.ClientSideEvents.Click = "";
 
             WebControl iconDiv = new WebControl(HtmlTextWriterTag.Div);
             iconDiv.Controls.Add(icon);

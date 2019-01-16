@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Web.UI.WebControls;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Web.Layout;
@@ -14,10 +13,30 @@ namespace Northwind.Module.Web.Controllers
         protected override void OnActivated()
         {
             base.OnActivated();
-            if(View.LayoutManager is WebLayoutManager layoutManager)
+            if (View.LayoutManager is WebLayoutManager layoutManager)
+            {
                 layoutManager.LayoutGroupTemplate = new CustomLayoutGroupTemplate();
-
+            
+                layoutManager.ItemCreated += OnItemCreated;
+                layoutManager.PageControlCreated += OnPageControlCreated;
+            }
+                
+            View.CurrentObjectChanged += ViewOnCurrentObjectChanged;
             View.ControlsCreated += ViewOnControlsCreated;
+        }
+
+        private void OnPageControlCreated(object sender, PageControlCreatedEventArgs e)
+        {
+
+        }
+
+        private void OnItemCreated(object sender, ItemCreatedEventArgs e)
+        {
+        }
+
+        private void ViewOnCurrentObjectChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void ViewOnControlsCreated(object sender, EventArgs e)
@@ -28,6 +47,16 @@ namespace Northwind.Module.Web.Controllers
                     //webContainer.Owner.Menu.HorizontalAlign = HorizontalAlign.Left;
                 }
             }
+        }
+
+        protected override void OnDeactivated()
+        {
+            var layoutManager = (WebLayoutManager) View.LayoutManager;
+            layoutManager.ItemCreated -= OnItemCreated;
+            layoutManager.PageControlCreated -= OnPageControlCreated;
+            View.CurrentObjectChanged -= ViewOnCurrentObjectChanged;
+            View.ControlsCreated -= ViewOnControlsCreated;
+            base.OnDeactivated();
         }
     }
 }

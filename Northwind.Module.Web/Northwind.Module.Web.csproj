@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ApplyCustomHeaderContent.cs" />
     <Compile Include="Controllers\CustomCustomerDetailView.cs" />
+    <Compile Include="Controllers\CustomEmployeeDetailView.cs" />
     <Compile Include="Controllers\SomeViewController.cs">
       <SubType>Component</SubType>
     </Compile>

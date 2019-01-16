@@ -28,7 +28,8 @@ namespace Northwind.Web {
         protected void Session_Start(Object sender, EventArgs e) {
             Tracing.Initialize();
             WebApplication.SetInstance(Session, new NorthwindAspNetApplication());
-            DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
+            //DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
+            WebApplication.Instance.Settings.DefaultVerticalTemplateContentPath = "DefaultVerticalTemplateContent.ascx";
             WebApplication.Instance.SwitchToNewStyle();
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 WebApplication.Instance.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
