@@ -1,41 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
-  <ActionDesign>
-    <Actions>
-      <Action Id="singleChoiceAction1" ImageName="Action_ChooseSkin" PaintStyle="Image" />
-    </Actions>
-    <ActionToContainerMapping>
-      <ActionContainer Id="Edit">
-        <ActionLink ActionId="Cancel" IsNewNode="True" />
-      </ActionContainer>
-    </ActionToContainerMapping>
-  </ActionDesign>
-  <Options CollectionsEditMode="Edit" />
   <SchemaModules>
     <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
-  <ViewItems>
-    <PropertyEditor Name="PropertyEditors">
-      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
-    </PropertyEditor>
-  </ViewItems>
-  <Views>
-    <ListView Id="Employees_EmployeesCollection_ListView" MasterDetailMode="ListViewOnly" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" AllowEdit="True" />
-    <DetailView Id="Orders_Custom_DetailView" ClassName="Northwind.Module.BusinessObjects.Northwind.Customers" IsNewNode="True">
-      <Items IsNewNode="True">
-        <CustomUserControlViewItemWeb Id="CustomerViewItem" CustomControlPath="CustomerViewControl.ascx" IsNewNode="True" />
-      </Items>
-      <Layout IsNewNode="True">
-        <LayoutGroup Id="Main" IsNewNode="True">
-          <LayoutItem Id="CustomerViewItem" ViewItem="CustomerViewItem" Index="0" IsNewNode="True" />
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="Products_DetailView">
-      <Items>
-        <PropertyEditor Id="CategoryID" PropertyEditorType="Northwind.Module.Web.Editors.CustomDropDownTreelistEditor" />
-      </Items>
-    </DetailView>
-  </Views>
 </Application>

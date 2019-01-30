@@ -17,11 +17,4 @@
   <SchemaModules>
     <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
-  <Views>
-    <DetailView Id="Products_DetailView">
-      <Items>
-        <PropertyEditor Id="SupplierID" LookupEditorMode="AllItems" />
-      </Items>
-    </DetailView>
-  </Views>
 </Application>
