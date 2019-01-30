@@ -243,7 +243,6 @@
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Territories.Designer.cs">
       <DependentUpon>Territories.cs</DependentUpon>
     </Compile>
-    <Compile Include="BusinessObjects\OverrideAuditDataItems.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
