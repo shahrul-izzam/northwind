@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\EmployeeNonPersistent.cs" />
     <Compile Include="BusinessObjects\ICustomerView.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Alphabeticallistofproducts.Designer.cs">
@@ -242,6 +243,9 @@
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Territories.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Territories.Designer.cs">
       <DependentUpon>Territories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\InitializeNonPersistentListViewController.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">

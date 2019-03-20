@@ -2,6 +2,11 @@
 <Application>
   <NavigationItems>
     <Items>
+      <Item Id="@0d9ccbea-fcf0-455f-b93b-9e36aed49970">
+        <Items>
+          <Item Id="NonPersistenEmployeeList" ViewId="EmployeeNonPersistent_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
       <Item Id="@1c502fdc-5a46-4311-b61d-9cfcb79eb9a5" Caption="Suppliers" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="@8100e84b-756d-4653-8ebd-2243682b1565" Caption="Supplier List" ViewId="Suppliers_ListView" IsNewNode="True" />

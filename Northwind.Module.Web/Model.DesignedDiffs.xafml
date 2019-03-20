@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
+  <BOModel>
+    <Class Name="Northwind.Module.BusinessObjects.EmployeeNonPersistent">
+      <OwnMembers>
+        <Member Name="EmployeeID" AllowEdit="False" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
   <SchemaModules>
     <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
