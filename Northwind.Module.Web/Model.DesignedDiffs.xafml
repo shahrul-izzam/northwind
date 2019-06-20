@@ -8,7 +8,12 @@
     </Class>
   </BOModel>
   <SchemaModules>
+    <SchemaModule Name="SchedulerAspNetModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
+  <Views>
+    <ListView Id="Event_ListView" SchedulerViewType="Month" />
+  </Views>
 </Application>

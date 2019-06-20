@@ -11,12 +11,10 @@ using DevExpress.Xpo;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
-using DevExpress.Persistent.Base.General;
-
 namespace Northwind.Module.BusinessObjects.Northwind
 {
 
-    public partial class Customers : XPLiteObject, ITreeNode
+    public partial class Customers : XPLiteObject
     {
         string fCustomerID;
         [Key]
@@ -102,10 +100,6 @@ namespace Northwind.Module.BusinessObjects.Northwind
         }
         [Association(@"OrdersReferencesCustomers")]
         public XPCollection<Orders> OrdersCollection { get { return GetCollection<Orders>(nameof(OrdersCollection)); } }
-
-        string ITreeNode.Name { get; }
-        ITreeNode ITreeNode.Parent { get; }
-        IBindingList ITreeNode.Children { get; }
     }
 
 }

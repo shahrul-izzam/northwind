@@ -144,6 +144,10 @@
     <Compile Include="BusinessObjects\NorthwindDataModelCode\EmployeeTerritories.Designer.cs">
       <DependentUpon>EmployeeTerritories.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Event.cs" />
+    <Compile Include="BusinessObjects\NorthwindDataModelCode\Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Invoices.cs" />
     <Compile Include="BusinessObjects\NorthwindDataModelCode\Invoices.Designer.cs">
       <DependentUpon>Invoices.cs</DependentUpon>

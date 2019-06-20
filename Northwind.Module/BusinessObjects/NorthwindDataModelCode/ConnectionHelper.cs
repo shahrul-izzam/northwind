@@ -16,37 +16,22 @@ namespace Northwind.Module.BusinessObjects.Northwind
     public static class ConnectionHelper
     {
         static Type[] persistentTypes = new Type[] {
-            typeof(Alphabeticallistofproducts),
             typeof(Categories),
-            typeof(CategorySalesfor1997),
-            typeof(CurrentProductList),
-            typeof(CustomerandSuppliersbyCity),
             typeof(CustomerCustomerDemo),
             typeof(CustomerDemographics),
             typeof(Customers),
             typeof(Employees),
             typeof(EmployeeTerritories),
-            typeof(Invoices),
             typeof(LogEntries),
             typeof(OrderDetails),
-            typeof(OrderDetailsExtended),
-            typeof(OrderSubtotals),
             typeof(Orders),
-            typeof(OrdersQry),
-            typeof(ProductSalesfor1997),
             typeof(Products),
-            typeof(ProductsAboveAveragePrice),
-            typeof(ProductsbyCategory),
-            typeof(QuarterlyOrders),
             typeof(Region),
-            typeof(SalesbyCategory),
-            typeof(SalesTotalsbyAmount),
             typeof(Shippers),
-            typeof(SummaryofSalesbyQuarter),
-            typeof(SummaryofSalesbyYear),
             typeof(Suppliers),
             typeof(sysdiagrams),
-            typeof(Territories)
+            typeof(Territories),
+            typeof(Event)
         };
         public static Type[] GetPersistentTypes()
         {

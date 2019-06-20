@@ -2,24 +2,16 @@
 <Application>
   <NavigationItems>
     <Items>
-      <Item Id="@0d9ccbea-fcf0-455f-b93b-9e36aed49970">
-        <Items>
-          <Item Id="NonPersistenEmployeeList" ViewId="EmployeeNonPersistent_ListView" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="@1c502fdc-5a46-4311-b61d-9cfcb79eb9a5" Caption="Suppliers" IsNewNode="True">
+      <Item Id="@5c74f9e1-e503-45de-9f54-76c28da3a5bb" Caption="Events" ViewId="" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="@8100e84b-756d-4653-8ebd-2243682b1565" Caption="Supplier List" ViewId="Suppliers_ListView" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="@2adf5731-2314-4e1c-9b20-959aafe8bd87" Caption="Products" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="@77decfb9-6065-4b39-92c6-a5752c963d62" Caption="Product List" ViewId="Products_ListView" IsNewNode="True" />
+          <Item Id="@95eb9308-d001-4c91-a6e6-bfa435405aaa" ViewId="Event_ListView" IsNewNode="True" />
         </Items>
       </Item>
     </Items>
   </NavigationItems>
   <SchemaModules>
+    <SchemaModule Name="SchedulerAspNetModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemAspNetModule" Version="18.1.6.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>

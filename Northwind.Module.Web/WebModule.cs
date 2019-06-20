@@ -12,6 +12,7 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
+using Northwind.Module.Web.Controllers;
 
 namespace Northwind.Module.Web {
     [ToolboxItemFilter("Xaf.Platform.Web")]
@@ -26,6 +27,15 @@ namespace Northwind.Module.Web {
         public override void Setup(XafApplication application) {
             base.Setup(application);
             // Manage various aspects of the application UI and behavior at the module level.
+        }
+
+        protected override IEnumerable<Type> GetDeclaredControllerTypes()
+        {
+            return new List<Type>()
+            {
+                typeof(ModifyRecurrenceRecordController),
+                typeof(ModifyRecurrenceRecordOnObjectCreated)
+            };
         }
     }
 }

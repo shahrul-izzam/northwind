@@ -11,8 +11,6 @@ using DevExpress.Xpo;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
-using DevExpress.Persistent.Validation;
-
 namespace Northwind.Module.BusinessObjects.Northwind
 {
 
@@ -28,7 +26,6 @@ namespace Northwind.Module.BusinessObjects.Northwind
         string fProductName;
         [Indexed(Name = @"ProductName")]
         [Size(40)]
-        [RuleRequiredField("RuleRequiredField for ProductName",DefaultContexts.Save,"A title must be specified")]
         public string ProductName
         {
             get { return fProductName; }
@@ -36,7 +33,6 @@ namespace Northwind.Module.BusinessObjects.Northwind
         }
         Suppliers fSupplierID;
         [Association(@"ProductsReferencesSuppliers")]
-        [RuleRequiredField("RuleRequiredField for SupplierID",DefaultContexts.Save, "Supplier must be specified")]
         public Suppliers SupplierID
         {
             get { return fSupplierID; }
@@ -44,7 +40,6 @@ namespace Northwind.Module.BusinessObjects.Northwind
         }
         Categories fCategoryID;
         [Association(@"ProductsReferencesCategories")]
-        [RuleRequiredField("RuleRequiredField for CategoryID",DefaultContexts.Save, "Category must be specified")]
         public Categories CategoryID
         {
             get { return fCategoryID; }
