@@ -34,7 +34,8 @@ namespace Northwind.Module.Web {
             return new List<Type>()
             {
                 typeof(ModifyRecurrenceRecordController),
-                typeof(ModifyRecurrenceRecordOnObjectCreated)
+                typeof(ModifyRecurrenceRecordOnObjectCreated),
+                typeof(ApplyFiltering)
             };
         }
     }
